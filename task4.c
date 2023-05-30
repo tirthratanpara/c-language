@@ -1,14 +1,17 @@
 #include<stdio.h>
-
-void main()
+int main()
 {
-	int x,y,ans;
-	printf("enter the value of x:");
-	scanf("%d",&x);
+	int a,b;
+	printf("enter the value of a:");
+	scanf("%d",&a);
+	printf("enter the value of b:");
+	scanf("%d",&b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("value of a:%d\n",a);
+	printf("value of b:%d",b);
+	return 0;
 	
-	printf("enter the value of y:");
-	scanf("%d",&y);
-	ans= (x*x*x) - (y*y*y) - ((3*x*y)*(x+y));
-	printf("%d",&ans);
-	
+
 }
